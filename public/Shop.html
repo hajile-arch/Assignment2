@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <!-- Link to css-->
+    <link rel="stylesheet" href="css/shop.css">
+    <!-- box Icons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar-->
+    <header>
+        <!-- Nav bar -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="Home.html" class="logo">Xin Zheng Yang</a>
+            <!-- Cart icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0.00</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- Close Cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop </h2>
+        <!-- shop content -->
+        <div class="shop-content">
+             <!-- Box1 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCzfU29wdbYKBYYX2f54aYB3cItrunEngeX96R7AX8SA_8O7zgL1qI9smrg8HfwbwrEcTAGDZpBmorvwOZeNqpLm-MOBlG_aMVpc_Zt-So1UbdJigl3y7Ju-E-xWj12YsPdtd1pj2m6V18F3wTOL-s7xAOvrzBEuXYRcbuNJJ1Wn32xh2FUvoLtTH1TEvJ/s320/Mushroom%20soup.jpg " 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Mushroom Soup</h2>
+                <span class="price">$6.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box2 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3tp0zLbKPBy6vLIr0FAdhipxE8iC4rTVsNIJToektc1AJwBCyeP6xCATNIR1vX5ZTnq5bPDLY3CqjROco-ZLcDRCTOJD6Uux1lJjdAS2xiR8VHv_iJrwKh9ac_Nki4tnqf_yN0JBEi3kzjMjiejgkqNvpOvtUFBu7o70tnakvdwXKPVbmc_7wiXav6wCt/s320/WANTAN%20MEE.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">WanTan Mee</h2>
+                <span class="price">$8.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box3 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmvb00XNiKYtbfGrqkEFZ7uCYNn571fL6xWM0g_eEt_hNj1CRH7KlJGk5iha32Up5lNyttzJpZVbabqY9LtEpJmOApVBR6keKWIiLsbWJiiizHagX8SO_w7la09o66q7KNZXsViNU7idC0k7wLOd4Yk0iny6i65prCzFtAGiIyzY4h5eELrp6gOP4I9Fh8/s320/kOPI.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Coffee</h2>
+                <span class="price">$2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box4 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHBtoiewlJktDjWgv2cC4W-H7imlcWdIxCCWsuePsyS8JO45lEcnNii8m3yBDkxdenKGOtL-IHhs499s1nhiS1-DQB7Lu9dYhiUAH-f1_YjqdsRwLsHTyZNeWReed19YUM74V-3sK9-hRV1O1Fbez5z1q-UvxsjjQq-rv_q-SP8bSd7KkTSAk5elTjkgfL/s320/teh%20Ais.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Teh Ais</h2>
+                <span class="price">$2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box5 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixgd1OcZsaQTdMhutwFvdb0Rulu8kxF9ZcvnfyU11jchGrN21Ce3N6qctcnZSi2dPjgracn7bo5WmYOJEP-fD4WVDN-2YMqLtsqZDfppEEVC_-9vOndFkhVC8L9lanqUSsd6Y03BcaCelurl-GBB-qDyRvmYxvaNq4NR9JiznV2GAe89ORV5qt0-1mRnvy/s320/TAIWAN%20SWEET%20POTATO%20FRIES.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Fried Potato Stick</h2>
+                <span class="price">$5.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box6 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6DEBSCVewHOplVVTmUsnMDVK-yAcbfibD4uNqnNyO8MBBhvVVA7UqPJ5QneaUcTSBaEYvb2vEVXoUI8gutdH7IufkAydf89VJ6PanO0qM0rOwfHKkhRPrZL-Rjab6Y7REDqp8f3uwZBxKRl4aL2W8NKS7UpITso7ss_vW68Tofz6vCAgDuFMsBoM1kcZq/s320/SPAGHETTI%20BOLOGNESE.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">spaghetti bolognese</h2>
+                <span class="price">$9.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box7 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLOcvaJNx1oW6Xnx8-ORR8p9l5V5mNAsIZ_znKs9kmSzYadqqDF2SvWkyl-zzD3F0rRjFsBlYMDdCUU2hu6cMqdbcxkT4qwEhlbNM3GcHJ_7PauZ-Hf-KGhdiwJK8Nkywu2aT7HbB3-JUIE0zrSv50eBXHEz9uYpU1nU-YuPv8-CLhi1sypoKe3mqc_11S/s320/SPAGHETTI%20AGLIO%20OLIO.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Spaghetti olio aglio</h2>
+                <span class="price">$7.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box8 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyndrB9xwWMvni7fbrtvoC29_wnRzF8A44INGn-T6CIkXJukwM02c4hvopaZaXU4jtnzvsl7GrZgW3_lcmpbYpVbXJmXp4LEt-h2RxD1lyKz0dUnx9PVpH6v-vDW7f8p1AU1W2Mt35rPZPJQ_I8XDmrE-Q_LSHr4bB2b4prbxUBA2DU2IZPxfIht8dxp9U/s320/LeiCha.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">LeiCha</h2>
+                <span class="price">$6.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box9 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1KV3a1l9VGfLDNtKugz391z-aJxgMCdaxH6p-4UVeF_sZqg7kKf-EAm5Z1Bv4ZAIDEA1RDNwjz4_3Dk_nD3TTk59IqQAUoHnXfwIass99pyhf_pG77BcEEs_dorapXf6pftwFQwTORok8zVb8vlg-sGOHFCf7uAZ9HxtU-FlpxmGDh12IigRVOk79e8KP/s320/Grill%20Chicken%20Chop.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Grill Chicken Chop</h2>
+                <span class="price">$8.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box10 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0CkgDYGEyxh3lXYXnf3MzLitgvhpLYH_0GHDyyEAxBbI9Er3d2jzDQPfLlElqsRqqDl_q1j4Ihw9sxiWqJzeJ40tYswXzniwVVJXmZ3bMU8O8NivMUoXOe6UptpnPFkR3JvKPAp20XG-d1D_djQqnp9uc-15QEKI_yhHZa-tedYkwAyReb0AFGh7RnuS6/s320/Fish%20Noodle.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Fishball Noodle</h2>
+                <span class="price">$7.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box11 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNZuVmO0T59JIOpz6tDN3iXnhLwJBKrGCpc67KWO_EN5xW_Tq9LKoXu7YGqO8JvHPZ260fmsq1lwkZb_qrK9pvdQIwTBR5dYJM0jfJn_-U3Ra-EKI0QWd0n2blqooQSo2HteJ9pKi39_fWyPLM4VbB77wVSFgQAeXw9jrbNnTGxlsAvCd-PdCYf5y9pQuG/s320/Fish%20and%20Chips.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Fish and Chips</h2>
+                <span class="price">$9.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box12 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjogzMNYtKm1Uauf5lBJ5QzqWk37Lmfjj6PQWFlVpWZ-7R5ryvPFe0J_6XhtY5V5GX6gvSfthnb09qvWg2VFSQ4AeIfLRIMcmZvo0-PUzk45Z44r6rONVsPvom8koDC5yHDXBZOa8pGxol_6m2aZpePXPh_866wZkIysCZElPd0Xc0g_YUlrnaBbZqRHN7A/s320/dUMPLINGS.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Dumplings(10pcs)</h2>
+                <span class="price">$12.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box13 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnZ8ZyllmgKxNRlqGeIgT_4A1MEYK6XkEqcAGCmhltq6VGi5t0lrp9azc6eG9nVwlwenHWP_xOc9a0hiBK4i8UPku1eSK2tgRdR3hlPD2HgR_O_wZ7A4Qeo-4fWf0ULnzgdBxgrDWwIddnqinDom7i6Ys8wFK83AFvMQVgxtw5ybambvTvpvi0t5Ygc2Wv/s320/Chicken%20rice.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Chicken Rice</h2>
+                <span class="price">$7.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box14 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf8fXWxZ-SjCANWj9ppHfVflB2j4zT_eHaI75anv5hCVHjGcpoi5GhcrXUVqPDxOx2fqvAB2Lt4e4fdYZlOKqqpNjf9Y_okHE1veiw_Mdv69QLbueswS3E0tvN12qCONWzjDDMaJhgiGG5pNlBueC5MaIvtzsvUhrVi-BUStGdjPj4b6FeWZnsxupmndtH/s320/CHARXIU+ROASTED%20PORK%20RICE.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">叉燒 x 烧肉 rice</h2>
+                <span class="price">$10.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box15 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAxjx1Io6S4Q3H2boy2RRBUDeg9IyvOPCpxM0xGomEeINA_J6bLSD9ElFzDQoBWoePkFgqwhyKwkkKFA7CeyufS7pr1KFTNLaAy6VD290A704u1Wu7f2dsNS3ckWn2o-ouf8cNG5-ExaN_XG52wgFWFk5QEFUPY7VfXxkiRhyEfhykeX_bp_RV1K_OetxW/s320/Char%20Kuey%20teow.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">炒果条 x egg</h2>
+                <span class="price">$9.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+             <!-- Box16 -->
+             <div class="product-box">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcWouEVrsHOylH6SZRkvzhKrwm0E2SvJ0z6GzWjT7FTPO3TJXn58o7cBaIZlv52Rf3uS_1wILGWoXpA1JhVnz-Kvx8UivCKhq1iWvJknxA68VqWFluoFYsRYgV7ULyaRg2c3Qlk7d0_RFI1qki-2-z6t_U3qVln2QXbAgTmMgdTUEwQfyyZQgIFqSyje3g/s320/Asam%20Laksa.jpg" 
+                alt="" 
+                class="product-img"
+                >
+                <h2 class="product-title">Asam Laksa</h2>
+                <span class="price">$7.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+             </div>
+        </div>
+    </section>
+    <!-- Link to JS -->
+    <script>
+        // Open close cart
+let cartIcon = document.querySelector('#cart-icon');
+let cart = document.querySelector('.cart');
+let closeCart = document.querySelector('#close-cart');
+
+// Open Cart
+cartIcon.onclick = () => {
+cart.classList.add('active');
+};
+
+// Close Cart
+closeCart.onclick = () => {
+cart.classList.remove('active');
+};
+
+// Cart Working Js
+if (document.readyState == 'loading') {
+document.addEventListener('DOMContentLoaded', ready);
+} else {
+ready();
+}
+
+function ready(){
+    var removeCartButtons = document.getElementsByClassName ('cart-remove');
+    for(var i = 0; i<removeCartButtons.length; i++){
+        var button = removeCartButtons[i];
+        button.addEventListener("click",removeCartItem);
+    }
+    //Quantity Change
+    var quantityInputs = document.getElementsByClassName ('cart-quantity');
+    for(var i = 0; i< quantityInputs.length; i++){
+        var input = quantityInputs[i];
+        input.addEventListener("change", quantityChanged);
+    }
+    //Add to cart
+    var addCart = document.getElementsByClassName ('add-cart');
+    for(var i = 0; i< addCart.length; i++){
+        var button = addCart[i];
+        button.addEventListener("click", addCartClicked);
+    }
+    LoadCartItems();
+} 
+//Remove Cart Item
+function removeCartItem(event){
+    var buttonClicked =event.target;
+    buttonClicked.parentElement.remove();
+    updatetotal();
+    saveCartItems();
+    updateCartIcon();
+}
+//Quantity Change
+function quantityChanged(event){
+    var input = event.target;
+    if (isNaN(input.value)||input.value <= 0 ){
+        input.value = 1;
+    }
+    updatetotal();
+    updateCartIcon();
+    saveCartItems();
+}
+
+
+// Add Cart Function
+function addCartClicked(event){
+    var button = event.target;
+    var shopProducts= button.parentElement;
+    var title=shopProducts.getElementsByClassName("product-title")[0].innerText;
+    var price = shopProducts.getElementsByClassName('price')[0].innerText;
+    var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
+    addProductToCart(title,price,productImg);
+    updatetotal();
+    updateCartIcon();
+    saveCartItems();
+}
+
+function addProductToCart(title,price,productImg){
+    var cartShopBox = document.createElement('div');
+    cartShopBox.classList.add('cart-box');
+    var cartItems= document.getElementsByClassName('cart-content')[0];
+    var cartItemsNames = cartItems.getElementsByClassName('cart-product-title');
+    for (var i =0; i<cartItemsNames.length; i++){
+        if (cartItemsNames[i].innerText==title){
+            alert('You have already added this item to cart');
+            return;
+        }
+    }
+    var cartBoxContent = `
+    <img src="${productImg}" alt="" class="cart-img">
+    <div class="detail-box">
+        <div class="cart-product-title">${title}</div>
+        <div class="cart-price">${price}</div>
+        <input 
+        type="number" 
+        name="" 
+        id="" 
+        value="1" 
+        class="cart-quantity"
+        />
+    </div>
+    <!-- Remove Item -->
+    <i class='bx bx-trash-alt cart-remove'></i>`;
+    cartShopBox.innerHTML=cartBoxContent;
+    cartItems.append(cartShopBox);
+    cartShopBox.getElementsByClassName('cart-remove')[0]
+    .addEventListener('click', removeCartItem);
+    cartShopBox.getElementsByClassName('cart-quantity')[0]
+    .addEventListener('change',quantityChanged); 
+    updateCartIcon();
+    saveCartItems();
+}
+
+
+//Update Total
+function updatetotal(){
+    var cartContent = document.getElementsByClassName('cart-content')[0];
+    var cartBoxes = cartContent.getElementsByClassName('cart-box');
+    var total=0;
+    for (var i =0; i<cartBoxes.length; i++){
+        var cartBox = cartBoxes[i];
+        var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+        var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+        var price=parseFloat(priceElement.innerText.replace('$',''))
+        var quantity = quantityElement.value;
+        total+=price*quantity;
+    }
+    document.getElementsByClassName("total-price")[0].innerText = "$"+total.toFixed(2);
+    //Save total to Local storage
+    localStorage.setItem('çartTotal', total);
+}
+
+function saveCartItems (){
+    var cartContent = document.getElementsByClassName('cart-content')[0];
+    var cartBoxes = cartContent.getElementsByClassName('cart-box');
+    var cartItems = [];
+
+    for(var i=0; i<cartBoxes.length; i++){
+        cartBox = cartBoxes[i];
+        var titleElement = cartBox.getElementsByClassName('cart-product-title')[0];
+        var priceElement = cart.getElementsByClassName('cart-price')[0];
+        var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+        var productImg = cartBox.getElementsByClassName('cart-img')[0].src;
+
+        var item={
+            title: titleElement.innerText,
+            price: priceElement.innerText,
+            quantity: quantityElement.value,
+            productImg: productImg,
+        };
+        cartItems.push(item);
+    }
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
+
+//Loads in Cart
+function LoadCartItems (){
+    var cartItems=localStorage.getItem('cartItems');
+    if (cartItems){
+        cartItems=JSON.parse(cartItems);
+
+        for (var i=0; i<cartItems.length; i++){
+            var item=cartItems[i];
+            addProductToCart(item.title, item.price, item.productImg);
+
+            var cartBoxes = document.getElementsByClassName('cart-box');
+            var cartBox = cartBoxes[cartBoxes.length - 1];
+            var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+            quantityElement.value=item.quantity;
+        }
+    }
+    var cartTotal = localStorage.getItem('cartTotal');
+    if (cartTotal){
+        document.getElementsByClassName('total-price')[0].innertext = "$" + cartTotal;
+    }
+}
+
+function updateCartIcon (){
+    var cartBoxes = document.getElementsByClassName('cart-box');
+    var quantity=0;
+
+    for (var i =0; i < cartBoxes.length; i++){
+        var cartBox=cartBoxes[i];
+        var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+        quantity+=parseInt(quantityElement.value);
+    }
+    var cartIcon = document.querySelector('#cart-icon');
+    cartIcon.setAttribute('data-quantity',quantity);
+}
+function clearCart(){
+    var cartContent = document.getElementsByClassName('cart-content')[0];
+    cartContent.innerHTML='';
+    updatetotal()
+    localStorage.removeItem("cartItems");
+}
+    </script>
+    <script>
+        const payBtn = document.querySelector('.btn-buy');
+
+payBtn.addEventListener('click',()=>{
+    fetch('/stripe-checkout',{
+        method:'post',
+        headers: new Headers({'Content-Type':'application/JSON'}),
+        body: JSON.stringify({
+            items: JSON.parse(localStorage.getItem('cartItems')),
+        })
+    })
+    .then((res)=> res.json())
+    .then((url) => {
+        location.href = url;
+        clearCart();
+    })
+    .catch((err) => console.log(err));
+});
+  
+    </script>
+</body>
+</html>

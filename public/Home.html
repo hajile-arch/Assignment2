@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>新正陽</title>
+  <link rel="shortcut icon" href="img/Logo-01.jpg">
+  <script>
+    // Function to change the title when the tab becomes inactive
+    function handleVisibilityChange() {
+      if (document.visibilityState === 'hidden') {
+        document.title = "Don't leave me";} 
+      else {
+        document.title = '新正陽';}
+      }
+    // Event listener for the visibilitychange event
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+  </script>
+  
+  <!-- Reviews css -->
+  <link rel="stylesheet" href="css/review(2).min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="css/swiper(2).min.css">
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/style2.css">
+  
+  <!-- Other css links -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Navigation bar resize for Js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var accountLink = document.querySelector(".account-link");
+      var accountDropdown = accountLink.querySelector(".account-dropdown");
+      var accountLinkText = accountLink.querySelector(".account-link-text");
+      var isResized = false; // Flag to track resizing
+    
+      accountLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        accountLink.classList.toggle("active");
+      });
+    
+      accountLinkText.addEventListener("click", function(event) {
+        if (window.innerWidth < 858) {
+          event.preventDefault();
+          window.location.href = "Login.html"; // Replace "Terms.html" with the desired URL
+        }
+      });
+    
+      document.addEventListener("click", function(event) {
+        if (!accountLink.contains(event.target)) {
+          accountLink.classList.remove("active");
+        }
+      });
+    
+      window.addEventListener("resize", function() {
+        if (!isResized) {
+          // Check if resizing occurred after page load
+          isResized = true;
+        } else {
+          // Remove "active" class when window is resized
+          accountLink.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="Home.html">
+      <img src="img/Logo-for-header-01.png" alt="Logo" id="logo4header">  
+    </a>
+    <ul>
+      <li><a href="Home.html" class="navigation">HOME</a></li>
+      <li><a href="Shop.html" class="navigation">EXPLORE MENU</a></li>
+      <li><a href="Terms.html" class="navigation">TERMS</a></li>
+      <li><a href="Contact.html" class="navigation">CONTACT US</a></li>
+      <li><a href="Login.html"><img src="img/My-account-01.png" class="account-icon" alt="My Account">
+        <span class="account-text">My Account</span></a>
+      </li>
+    </ul>
+  </nav>
+
+<!-- Swiper -->
+
+  <section class="home">
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/bg1.png" alt="">
+          <div class="text-content">
+            <h2 class="title">About us <span>新正陽</span></h2>
+            <p>Indulge in a culinary adventure at Restoran Xin Zheng Yang Tea House, a bustling restaurant with a myriad of stalls offering tantalizing Malaysian delicacies. From fragrant porridge to savory pig organ soup, savor the diverse flavors that tell the vibrant story of Malaysian cuisine. Experience a gastronomic paradise where every bite is a delightful journey.</p>
+            <button class="read-btn">Swipe Right <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="img/bg2.png" alt="">
+          <div class="text-content">
+            <h2 class="title">Nasi Lemak <span>Top Seller</span></h2>
+            <p>Discover the irresistible allure of Nasi Lemak, Malaysia's top-selling dish! Indulge in the aromatic blend of coconut rice, spicy sambal, crispy anchovies, and tantalizing accompaniments. Whether for breakfast, lunch, or a late-night snack, this vibrant and flavorful delight will transport your taste buds to the heart of Malaysian cuisine. Don't miss out on this must-try culinary experience!</p>
+            <button class="read-btn">Swipe Right <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="img/bg3.png" alt="">
+          <div class="text-content">
+            <h2 class="title">Western Food <span>Second Top Seller</span></h2>
+            <p>Indulge in the flavors of Western cuisine, our second top seller. Savor the juicy grilled steaks, perfectly seasoned burgers, and exquisite pasta dishes that will transport your taste buds to new heights. Prepared with the finest ingredients and served with flair, our Western specialties promise a delectable dining experience that will leave you craving for more. Join us and savor the best of the West!</p>
+            <button class="read-btn">Swipe Right <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/bg4.png" alt="">
+          <div class="text-content">
+            <h2 class="title">Ipoh Coffee <span>Most sold drinks</span></h2>
+            <p>Awaken your senses with the aromatic delight of Ipoh coffee, sourced directly from Chang Jiang Ipoh Coffee. Experience the rich and smooth flavors of this renowned Malaysian brew, crafted with passion and tradition. Our expert baristas meticulously prepare each cup, ensuring a perfect balance of robustness and smoothness. Indulge in the authentic taste of Ipoh coffee and let its warmth embrace you. Join us for a delightful coffee experience like no other.</p>
+            <button class="read-btn">Swipe Right <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slider-thumbs">
+      <div class="swiper-wrapper thumbs-container">
+        <img src="img/bg1.png" class="swiper-slide" alt="">
+        <img src="img/bg2.png" class="swiper-slide" alt="">
+        <img src="img/bg3.png" class="swiper-slide" alt="">
+        <img src="img/bg4.png" class="swiper-slide" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Javascript for Swiper -->
+<script src="js/swiper(2).min.js"></script>
+<script>
+  var swiper = new Swiper(".bg-slider-thumbs", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 0,
+    });
+  var swiper2 = new Swiper(".bg-slider", {
+    loop: true,
+    spaceBetween: 0,
+    thumbs: {
+      swiper: swiper,
+    },
+    });
+</script>
+<script>
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jasmine Lee</h2>
+                            <p class="description">Love the variety of stalls in this kopitiam! The food options are diverse, from local delights to Western cuisine. The only downside is the limited seating.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Daniel Tan</h2>
+                            <p class="description">Great kopitiam with a wide range of food stalls. The laksa and chicken rice are must-tries. The atmosphere is bustling, but finding a seat during peak hours can be a challenge.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Lisa Lim</h2>
+                            <p class="description">Decent kopitiam with a good selection of stalls. The prices are affordable, and the food is generally tasty. The only drawback is the limited parking space</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"> Andrew Ng</h2>
+                            <p class="description">Fantastic kopitiam experience! The variety of stalls is impressive, and the food quality is top-notch. The Hainanese chicken chop and nasi lemak are my favorites. 5 stars.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile5.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Michelle Wong</h2>
+                            <p class="description">A reliable kopitiam with something for everyone. Whether you crave local favorites or Western dishes, this place has got you covered. The prices are reasonable, and the food is satisfying.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile6.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"> Brian Tan</h2>
+                            <p class="description">Average kopitiam with average food. The variety of stalls is nice, but the taste is nothing exceptional. It's a convenient spot for a quick meal, though.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile7.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Stephanie Lim</h2>
+                            <p class="description">Outstanding kopitiam experience! The stalls offer an array of delicious food options. The satay and char kuey teow are must-haves. The only downside is the limited seating during peak hours.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile8.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Kevin Ng</h2>
+                            <p class="description">Good kopitiam with a decent selection of stalls. The service is prompt, and the food is enjoyable. It can get crowded during lunchtime, so be prepared to wait for a table.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/profile9.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Stiven Yang</h2>
+                            <p class="description">Exceptional kopitiam with a wide variety of stalls. The food quality is consistently excellent, and the prices are reasonable. The atmosphere is lively, but finding a seat can be challenging during busy periods.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+
+<!-- Review js -->
+<script src="js/review(2).min.js"></script>
+<script>
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Merchant information</h4>
+                <ul>
+                    <li>Address: <a href="https://www.google.com/maps/place/新正陽茶室餐厅+Restoran+Xin+Zheng+Yang/@3.318436,101.5348331,19z...lbmcgeWFuZ5IBCmZvb2RfY291cnTgAQA!16s%2Fg%2F11tg0csjl9?entry=ttu" title="Google map" target="_blank">Lot 21-1 & 22-1, Jalan Anggun City 1, Taman Anggun City, 48000 Rawang, Selangor</a></li>
+                    <li>Phone number:<a href="#">+60 19-360 0510</a></li>
+                    <li>Business hour:   0600 - 0000</li>
+                    <li>OWNER:  JUSTIN WONG JUN HONG</li>
+                    <li>EMAIL: <a href="mailto:b2201588@helplive.edu.my" target="_blank">B2201588@helplive.edu.my</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="socialmedia">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-waze"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

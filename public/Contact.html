@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>新正陽</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Function to change the title when the tab becomes inactive
+function handleVisibilityChange() {
+    if (document.visibilityState === 'hidden') {
+      document.title = "Don't leave me";
+    } else {
+      document.title = '新正陽';
+    }
+  }
+  
+  // Event listener for the visibilitychange event
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+  
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var accountLink = document.querySelector(".account-link");
+      var accountDropdown = accountLink.querySelector(".account-dropdown");
+      var accountLinkText = accountLink.querySelector(".account-link-text");
+      var isResized = false; // Flag to track resizing
+    
+      accountLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        accountLink.classList.toggle("active");
+      });
+    
+      accountLinkText.addEventListener("click", function(event) {
+        if (window.innerWidth < 858) {
+          event.preventDefault();
+          window.location.href = "Terms.html"; // Replace "Terms.html" with the desired URL
+        }
+      });
+    
+      document.addEventListener("click", function(event) {
+        if (!accountLink.contains(event.target)) {
+          accountLink.classList.remove("active");
+        }
+      });
+    
+      window.addEventListener("resize", function() {
+        if (!isResized) {
+          // Check if resizing occurred after page load
+          isResized = true;
+        } else {
+          // Remove "active" class when window is resized
+          accountLink.classList.remove("active");
+        }
+      });
+    });
+    
+  </script>
+  
+
+  
+ 
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="shortcut icon" href="img/Logo-01.jpg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="Home.html">
+      <img src="img/Logo-for-header-01.png" alt="Logo" id="logo4header">
+    </a>
+    <ul>
+      <li><a href="Home.html" class="navigation">HOME</a></li>
+      <li><a href="Shop.html" class="navigation">EXPLORE MENU</a></li>
+      <li><a href="Terms.html" class="navigation">TERMS</a></li>
+      <li><a href="Contact.html" class="navigation">CONTACT US</a></li>
+      <li><a href="Login.html"><img src="img/My-account-01.png" class="account-icon" alt="My Account">
+        <span class="account-text">My Account</span></a>
+      </li>
+    </ul>
+  </nav>
+<div class="body">
+    <div class="rectangle">
+        <div class="Title">Feedback</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="inputBox">
+                    <span class="details">Full name</span>
+                    <input type="text" placeholder="Name (Optional)" >
+                </div>
+                <div class="inputBox">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" >
+                </div>
+                <div class="inputBox">
+                    <span class="details">How did you come across this website?</span>
+                    <input type="text" placeholder="Type Here" >
+                </div>
+                <div class="inputBox">  
+                    <span class="details">Are you able to find what you need? If no, tell us how we can improve.</span>
+                    <input type="text" placeholder="Type here" >
+                </div>
+                <div class="inputBox" id="remark">
+                    <span class="details">Enter your remark</span>
+                    <textarea></textarea> 
+                </div>
+                
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Would you use this website again?</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Yes</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">No</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Maybe</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Send">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                Noted With Thanks 💖
+              </div>
+            </div>
+            <script>
+              const sendButton = document.querySelector('.button');
+              const overlay = document.querySelector('.overlay');
+              const form = document.querySelector('form');
+          
+              sendButton.addEventListener('click', function() {
+                overlay.classList.add('active');
+          
+                setTimeout(function() {
+                  overlay.classList.remove('active');
+                  form.reset();
+                }, 2000); // Adjust the delay as needed
+              });
+            </script>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Merchant information</h4>
+                <ul>
+                  <li>Address: <a href="https://www.google.com/maps/place/新正陽茶室餐厅+Restoran+Xin+Zheng+Yang/@3.318436,101.5348331,19z...lbmcgeWFuZ5IBCmZvb2RfY291cnTgAQA!16s%2Fg%2F11tg0csjl9?entry=ttu" title="Google map" target="_blank">Lot 21-1 & 22-1, Jalan Anggun City 1, Taman Anggun City, 48000 Rawang, Selangor</a></li>
+                    <li>Phone number:<a href="#">+60 19-360 0510</a></li>
+                    <li>Business hour:   0600 - 0000</li>
+                    <li>OWNER:  JUSTIN WONG JUN HONG</li>
+                    <li>EMAIL: <a href="mailto:b2201588@helplive.edu.my" target="_blank">B2201588@helplive.edu.my</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col" id="socialmedia">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-waze"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

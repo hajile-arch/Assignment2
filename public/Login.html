@@ -1,0 +1,313 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>新正陽</title>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Function to change the title when the tab becomes inactive
+function handleVisibilityChange() {
+    if (document.visibilityState === 'hidden') {
+      document.title = "Don't leave me";
+    } else {
+      document.title = '新正陽';
+    }
+  }
+  
+  // Event listener for the visibilitychange event
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+  
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var accountLink = document.querySelector(".account-link");
+      var accountDropdown = accountLink.querySelector(".account-dropdown");
+      var accountLinkText = accountLink.querySelector(".account-link-text");
+      var isResized = false; // Flag to track resizing
+    
+      accountLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        accountLink.classList.toggle("active");
+      });
+    
+      accountLinkText.addEventListener("click", function(event) {
+        if (window.innerWidth < 858) {
+          event.preventDefault();
+          window.location.href = "Login.html"; // Replace "Terms.html" with the desired URL
+        }
+      });
+    
+      document.addEventListener("click", function(event) {
+        if (!accountLink.contains(event.target)) {
+          accountLink.classList.remove("active");
+        }
+      });
+    
+      window.addEventListener("resize", function() {
+        if (!isResized) {
+          // Check if resizing occurred after page load
+          isResized = true;
+        } else {
+          // Remove "active" class when window is resized
+          accountLink.classList.remove("active");
+        }
+      });
+    });
+    
+  </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/Login.css">
+        <link rel="shortcut icon" href="img/Logo-01.jpg">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                        
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="Home.html">
+             <img src="img/Logo-for-header-01.png" alt="Logo" id="logo4header">
+            </a>
+            <ul>
+              <li><a href="Home.html" class="navigation">HOME</a></li>
+              <li><a href="Shop.html" class="navigation">EXPLORE MENU</a></li>
+              <li><a href="Terms.html" class="navigation">TERMS</a></li>
+              <li><a href="Contact.html" class="navigation">CONTACT US</a></li>
+              <li><a href="Login.html"><img src="img/My-account-01.png" class="account-icon" alt="My Account">
+                <span class="account-text">My Account</span></a>
+              </li>
+            </ul>
+          </nav>
+        <div class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#" id="loginForm">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" id="loginEmail">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password" id="loginPassword">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="Unknown.html" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="Unknown.html" class="field google">
+                        <img src="img/google.png" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#" id="signupForm">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" id="signupEmail">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password" id="signupPassword">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password" id="confirmPassword">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit">Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="img/google.png" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+          </div>
+
+        <!-- JavaScript -->
+<script>
+       document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelector(".forms");
+  const pwShowHide = document.querySelectorAll(".eye-icon");
+  const links = document.querySelectorAll(".link");
+
+  pwShowHide.forEach((eyeIcon) => {
+    eyeIcon.addEventListener("click", () => {
+      let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+      pwFields.forEach((password) => {
+        if (password.type === "password") {
+          password.type = "text";
+          eyeIcon.classList.replace("bx-hide", "bx-show");
+        } else {
+          password.type = "password";
+          eyeIcon.classList.replace("bx-show", "bx-hide");
+        }
+      });
+    });
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      forms.classList.toggle("show-signup");
+    });
+  });
+
+  const signUpForm = document.querySelector(".form.signup");
+  const passwordInputs = signUpForm.querySelectorAll(".password");
+  let passwordMatch = false;
+
+  function handleSignUpFormSubmit(event) {
+    event.preventDefault();
+
+    const password1 = passwordInputs[0].value;
+    const password2 = passwordInputs[1].value;
+
+    if (password1 !== password2) {
+      alert("Passwords do not match.");
+      passwordMatch = false;
+      return;
+    }
+
+    passwordMatch = true;
+    signUpForm.submit();
+  }
+
+  signUpForm.addEventListener("submit", handleSignUpFormSubmit);
+
+  // Retrieve the sign-up form and add a submit event listener
+  const signupForm = document.getElementById("signupForm");
+  signupForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("signupEmail").value;
+    const password = document.getElementById("signupPassword").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+
+    // Store the data in local storage
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+    if (passwordMatch) {
+      alert("Sign up successful!");
+
+      // Clear the form
+      signupForm.reset();
+    }
+  });
+
+  // Retrieve the login form and add a submit event listener
+  const loginForm = document.getElementById("loginForm");
+  loginForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Retrieve email and password from the form
+    const loginEmail = document.getElementById("loginEmail").value;
+    const loginPassword = document.getElementById("loginPassword").value;
+
+    // Retrieve the stored data from local storage
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+
+    // Check if the entered email and password match the stored data
+    if (loginEmail === storedEmail && loginPassword === storedPassword) {
+      alert("Login successful!");
+    } else {
+      alert("Incorrect username or password!");
+    }
+
+    // Clear the form
+    loginForm.reset();
+  });
+});
+
+
+</script>          
+  
+          
+      <footer class="footer">
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Merchant information</h4>
+                    <ul>
+                      <li>Address: <a href="https://www.google.com/maps/place/新正陽茶室餐厅+Restoran+Xin+Zheng+Yang/@3.318436,101.5348331,19z...lbmcgeWFuZ5IBCmZvb2RfY291cnTgAQA!16s%2Fg%2F11tg0csjl9?entry=ttu" title="Google map" target="_blank">Lot 21-1 & 22-1, Jalan Anggun City 1, Taman Anggun City, 48000 Rawang, Selangor</a></li>
+                        <li>Phone number:<a href="#">+60 19-360 0510</a></li>
+                        <li>Business hour:   0600 - 0000</li>
+                        <li>OWNER:  JUSTIN WONG JUN HONG</li>
+                        <li>EMAIL: <a href="mailto:b2201588@helplive.edu.my" target="_blank">B2201588@helplive.edu.my</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="socialmedia">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-waze"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+    </body>
+</html>
