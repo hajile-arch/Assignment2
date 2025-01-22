@@ -3,8 +3,7 @@
 A modern web-based platform for managing traditional coffee shop operations, featuring online ordering, secure payments, and comprehensive admin controls.
 
 ![GitHub](https://img.shields.io/github/license/hajile-7/Assignment2)
-![Node](https://img.shields.io/badge/node-v14+-blue)
-![npm](https://img.shields.io/badge/npm-v6+-blue)
+![XAMPP](https://img.shields.io/badge/XAMPP-v7.4+-orange)
 
 ## ✨ Features
 
@@ -32,8 +31,8 @@ A modern web-based platform for managing traditional coffee shop operations, fea
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+- XAMPP (v7.4 or higher)
+- Web browser (Chrome, Firefox, or Safari recommended)
 - Stripe API keys
 
 ### Installation
@@ -41,28 +40,31 @@ A modern web-based platform for managing traditional coffee shop operations, fea
 1. Clone the repo
    ```bash
    git clone https://github.com/hajile-7/Assignment2.git
-   cd Assignment2
    ```
 
-2. Install NPM packages
-   ```bash
-   npm install
-   ```
+2. Set up XAMPP
+   - Install XAMPP from [official website](https://www.apachefriends.org/)
+   - Start Apache and MySQL services from XAMPP Control Panel
 
-3. Configure environment
-   ```bash
-   cp .env.example .env
-   ```
+3. Project Setup
+   - Copy project folder to `xampp/htdocs/` directory
+   - Create database using phpMyAdmin
+   - Import database file from `database/kopitiam.sql`
 
-4. Launch application
-   ```bash
-   npm start
-   ```
+4. Configuration
+   - Update database credentials in `config/database.php`
+   - Configure Stripe API keys in payment settings
+
+5. Access Application
+   - Open web browser
+   - Navigate to `http://localhost/Assignment2`
 
 ## 💻 Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: Node.js
+- **Backend**: PHP
+- **Database**: MySQL (via XAMPP)
+- **Server**: Apache (via XAMPP)
 - **Payments**: Stripe API
 
 ## 📖 Documentation
@@ -73,22 +75,21 @@ A modern web-based platform for managing traditional coffee shop operations, fea
 - Complete checkout with Stripe
 
 ### For Administrators
+- Access admin panel at `http://localhost/Assignment2/admin`
+- Default admin credentials:
+  - Username: `admin`
+  - Password: `password123`
 - Manage orders
 - Update menu
 - View analytics
 
-## 🛠️ Development
+## 🔧 Troubleshooting
 
-```bash
-# Development mode
-npm run dev
-
-# Testing
-npm test
-
-# Production build
-npm run build
-```
+Common issues and solutions:
+- **Database Connection Error**: Verify database credentials in config file
+- **404 Error**: Ensure project folder is in correct htdocs directory
+- **XAMPP Services**: Confirm both Apache and MySQL are running
+- **Permission Issues**: Check folder permissions in htdocs
 
 ## 🤝 Contributing
 
