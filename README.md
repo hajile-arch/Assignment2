@@ -1,36 +1,122 @@
-Kopitiam Management System
-Overview
-The Kopitiam Management System is a web-based platform designed to streamline the operations of a traditional coffee shop business. It features secure payment integration, a responsive user interface, and a dynamic ordering system.
+# 🍵 Kopitiam Management System
 
-Features
-☕ Online Ordering – Customers can browse the menu and place orders.
-💳 Secure Payments – Integrated Stripe for seamless transactions.
-🎨 Responsive UI – Designed with HTML, CSS, and JavaScript for a smooth user experience.
-⚙️ Dynamic Management – Allows admins to manage orders efficiently.
+A modern web-based platform for managing traditional coffee shop operations, featuring online ordering, secure payments, and comprehensive admin controls.
 
-Technology Stack:
-Frontend: HTML, CSS, JavaScript
-Backend: Node.js
-Payment Integration: Stripe
+![GitHub](https://img.shields.io/github/license/hajile-7/Assignment2)
+![Node](https://img.shields.io/badge/node-v14+-blue)
+![npm](https://img.shields.io/badge/npm-v6+-blue)
 
-Installation & Setup
-Clone the repository:
-bash
-Copy
-Edit
-git clone https://github.com/hajile-7/Assignment2.git
-cd Assignment2
-Install dependencies:
-bash
-Copy
-Edit
-npm install
-Run the application:
-bash
-Copy
-Edit
-npm start
+## ✨ Features
 
-Usage:
-Customers can browse the menu, add items to their cart, and checkout securely.
-Admins can view and manage orders efficiently.
+- 🛒 **Online Ordering**
+  - Digital menu browsing
+  - Real-time cart updates
+  - Streamlined checkout process
+
+- 💳 **Secure Payments**
+  - Stripe integration
+  - Multiple payment methods
+  - Encrypted transactions
+
+- 📱 **Responsive Design**
+  - Mobile-optimized interface
+  - Cross-platform compatibility
+  - Intuitive user experience
+
+- ⚙️ **Admin Dashboard**
+  - Order management
+  - Inventory control
+  - Analytics reporting
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Stripe API keys
+
+### Installation
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/hajile-7/Assignment2.git
+   cd Assignment2
+   ```
+
+2. Install NPM packages
+   ```bash
+   npm install
+   ```
+
+3. Configure environment
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Launch application
+   ```bash
+   npm start
+   ```
+
+## 💻 Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**: Node.js
+- **Payments**: Stripe API
+
+## 📖 Documentation
+
+### For Customers
+- Browse menu items
+- Add to cart
+- Complete checkout with Stripe
+
+### For Administrators
+- Manage orders
+- Update menu
+- View analytics
+
+## 🛠️ Development
+
+```bash
+# Development mode
+npm run dev
+
+# Testing
+npm test
+
+# Production build
+npm run build
+```
+
+## 🤝 Contributing
+
+1. Fork it
+2. Create feature branch
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit changes
+   ```bash
+   git commit -m 'Add YourFeature'
+   ```
+4. Push to branch
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create Pull Request
+
+## 📝 License
+
+MIT License - see [`LICENSE.md`](LICENSE.md)
+
+## 🆘 Support
+
+Need help? 
+- 📧 Email: support@kopitiam.com
+- 🐛 Issues: Submit via GitHub Issues
+- 💬 Discussions: Use GitHub Discussions tab
+
+---
+Made with ☕ by [hajile-7](https://github.com/hajile-7)
